@@ -1,0 +1,107 @@
+body{
+margin: 0%;
+height: 100vh;
+overflow: hidden;
+
+}
+.hero{
+    background-image: url(/back-image.png);
+    min-height: 100vh;
+    
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    overflow: hidden;
+}
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+
+}
+
+.btn{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btnd{
+    text-decoration: none;
+    color: #333;
+    padding: 14px 40px;
+   color: #fff;
+   background-image: linear-gradient(45deg, #df4881,#c430d7);
+   border-radius: 30px;
+   border-top-right-radius: 0px;
+   border-bottom-left-radius: 0px;
+   transition: 0.3s;
+}
+
+.content{
+    margin-top: 10px;
+    max-width: 600px;
+
+}
+.content h1{
+
+    font-size: 70px;
+    color: #222;
+}
+.content p {
+    margin: 10px 0 30px;
+    color: #333;
+    animation-delay: 0.5s;
+}
+.content .btnd{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+.btnd:hover{
+    border-top-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+   border-top-right-radius: 30px;
+   border-bottom-left-radius: 30px;
+}
+
+.feature-image{
+    width: auto;
+    height: 550px;
+    margin-top: -360px;
+    margin-left: 600px;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+
+100%{
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+}
+.feature-image.anim{
+   animation-delay: 0.8s;
+}
